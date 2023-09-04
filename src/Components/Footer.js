@@ -26,7 +26,7 @@ export default function Footer() {
             <iframe
               title="Kanyakumari Map"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d987.2602539838997!2d77.45027964283852!3d8.19862284376179!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b04f14abfffffff%3A0xf7a9d562ab2695a6!2sGanga%20Grandeur!5e0!3m2!1sen!2sus!4v1693677425209!5m2!1sen!2sus"
-              width="250"
+              width="200"
               height="350"
               style={{
                 border: "10px solid grey", // Add thick grey border
