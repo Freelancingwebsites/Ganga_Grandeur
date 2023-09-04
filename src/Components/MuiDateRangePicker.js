@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     padding: '30px',
   },
   frame: {
-    background: 'linear-gradient(135deg, #FFB6C1, #87CEEB)', // Linear gradient background
+    background: 'linear-gradient(135deg, #e46bee, #61ff6b)', // Linear gradient background
     borderRadius: '10px',
     boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.2)', // Add a subtle shadow
   },
