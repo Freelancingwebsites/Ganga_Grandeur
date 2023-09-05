@@ -1,4 +1,6 @@
 import React from 'react';
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/js/bootstrap";
 import Navbar from "./Components/Navbar";
 import About from "./Components/About";
 import  MuiDateRangePicker  from './Components/MuiDateRangePicker';
