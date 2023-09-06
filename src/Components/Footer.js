@@ -78,9 +78,9 @@ export default function Footer() {
         </Grid>
         <Box mt={5}>
           <Typography variant="body2" color="text.secondary" align="center">
-            {"Copyright © "}
+            {"Copyright © Ganga Grandeur"}
             <Link color="inherit" href="https://your-website.com/">
-              Aditya BK
+              Powered by Aditya BK
             </Link>{" "}
             {new Date().getFullYear()}
             {"."}
