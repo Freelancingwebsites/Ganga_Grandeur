@@ -5,11 +5,14 @@ import { AdapterDayjs } from '@mui/x-date-pickers-pro/AdapterDayjs';
 import { DateRangePicker } from '@mui/x-date-pickers-pro/DateRangePicker';
 import Button from '@mui/material/Button';
 import { makeStyles } from '@mui/styles';
+import Container from "@mui/material/Container";
 
 const useStyles = makeStyles((theme) => ({
   container: {
     display: 'flex',
     flexDirection: 'row',
+    marginBottom: '20px',
+    marginTop: '10px',
     alignItems: 'center',
     paddingBottom: '25px',
     marginBottom: '20px',
@@ -46,6 +49,7 @@ export default function BasicDateRangePicker() {
   };
 
   return (
+    <Container maxWidth="false" sx={{marginY:'2'}}>
     <div className={classes.frame}>
       <LocalizationProvider dateAdapter={AdapterDayjs}>
         <div className={classes.bookingText}>BOOKING</div>
@@ -66,6 +70,7 @@ export default function BasicDateRangePicker() {
         </div>
       </LocalizationProvider>
     </div>
+    </Container>
   );
 }
 
