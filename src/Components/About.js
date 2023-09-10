@@ -1,4 +1,5 @@
 import React from 'react';
+import CssBaseline from "@mui/material/CssBaseline";
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
@@ -6,6 +7,8 @@ import Container from "@mui/material/Container";
 
 function App() {
   return (
+    <React.Fragment>
+    <CssBaseline />
     <Container maxWidth="false" sx={{marginY:'2'}}>
     <Box sx={containerStyle}>
       <h1 style={headingStyle}> <b> ABOUT </b></h1>
@@ -32,6 +35,7 @@ function App() {
       </p>
     </Box>
     </Container>
+    </React.Fragment>
   );
 }
 
