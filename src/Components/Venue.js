@@ -6,6 +6,7 @@ import CarIcon from '@mui/icons-material/DirectionsCar';
 import Grid from '@mui/material/Grid';
 import HotelIcon from '@mui/icons-material/Hotel';
 import FastfoodIcon from '@mui/icons-material/Fastfood';
+import CssBaseline from "@mui/material/CssBaseline";
 import StarsIcon from '@mui/icons-material/Stars';
 import LocalDiningIcon from '@mui/icons-material/LocalDining';
 import AcUnitIcon from '@mui/icons-material/AcUnit';
@@ -28,6 +29,8 @@ const CarCard = () => {
   };
 
   return (
+    <React.Fragment>
+    <CssBaseline />
     <Container maxWidth="false" sx={{marginY:'2'}}>
     <div style={cardContainerStyle}> {/* Container with the background */}
       <Card>
@@ -104,6 +107,7 @@ const CarCard = () => {
       </Card>
     </div>
     </Container>
+        </React.Fragment>
   );
 };
 
