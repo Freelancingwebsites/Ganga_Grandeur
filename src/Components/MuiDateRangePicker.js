@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
 import { LocalizationProvider } from '@mui/x-date-pickers-pro';
+import CssBaseline from "@mui/material/CssBaseline";
 import { AdapterDayjs } from '@mui/x-date-pickers-pro/AdapterDayjs';
 import { DateRangePicker } from '@mui/x-date-pickers-pro/DateRangePicker';
 import Button from '@mui/material/Button';
@@ -49,6 +50,8 @@ export default function BasicDateRangePicker() {
   };
 
   return (
+    <React.Fragment>
+    <CssBaseline />
     <Container maxWidth="false" sx={{marginY:'2'}}>
     <div className={classes.frame}>
       <LocalizationProvider dateAdapter={AdapterDayjs}>
@@ -71,6 +74,7 @@ export default function BasicDateRangePicker() {
       </LocalizationProvider>
     </div>
     </Container>
+          </React.Fragment>
   );
 }
 
