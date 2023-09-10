@@ -1,11 +1,20 @@
+<<<<<<< HEAD
 import React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
+=======
+import React from 'react';
+import CssBaseline from "@mui/material/CssBaseline";
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+>>>>>>> f1f000064a8d9236bf0863153bc8eab360ca0122
 import Container from "@mui/material/Container";
 
 function App() {
   return (
     <React.Fragment>
+<<<<<<< HEAD
       <CssBaseline />
       <Container maxWidth="false" sx={{ marginY: "2" }}>
         <Box sx={containerStyle}>
@@ -39,11 +48,41 @@ function App() {
           </p>
         </Box>
       </Container>
+=======
+    <CssBaseline />
+    <Container maxWidth="false" sx={{marginY:'2'}}>
+    <Box sx={containerStyle}>
+      <h1 style={headingStyle}> <b> ABOUT </b></h1>
+      <p style={paragraphStyle}>
+        Our Ganga Grandeur in Kanyakumari is an air-conditioned hall with a seating capacity of 1000 and a floating capacity of 1500.     
+      </p>
+      <p style={paragraphStyle}>
+      The Dining capacity of Ganga Grandeur is 350.
+      </p>
+      <p style={paragraphStyle}>
+      The Function Hall is on the Ground floor.
+      </p>
+      <p style={paragraphStyle}>
+      A parking facility is available for 200 cars and 250 bikes.
+      </p>
+      <p style={paragraphStyle}>
+      The Kalyana Mandapams provides air-conditioned rooms with a locker facility for the guests. 
+      </p>
+      <p style={paragraphStyle}>
+      Both the Dining hall and Function hall are on the same floor which is an added advantage.
+      </p>
+      <p style={paragraphStyle}>
+      You can contact us via WhatsApp for the best services.
+      </p>
+    </Box>
+    </Container>
+>>>>>>> f1f000064a8d9236bf0863153bc8eab360ca0122
     </React.Fragment>
   );
 }
 
 const containerStyle = {
+<<<<<<< HEAD
   background: "linear-gradient(135deg, #6479e4, #8dfc46)", // Gradient background
   padding: "20px",
   minHeight: "85px", // Ensure full height of the viewport
@@ -51,6 +90,15 @@ const containerStyle = {
   marginBottom: "20px",
   borderRadius: "10px", // Add rounded corners
   boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)", // Add a subtle shadow
+=======
+  background: 'linear-gradient(135deg, #6479e4, #8dfc46)', // Gradient background
+  padding: '20px',
+  minHeight: '85px', // Ensure full height of the viewport
+  marginTop: '10px',
+  marginBottom: '20px',
+  borderRadius: '10px', // Add rounded corners
+  boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.2)', // Add a subtle shadow
+>>>>>>> f1f000064a8d9236bf0863153bc8eab360ca0122
 };
 
 const headingStyle = {

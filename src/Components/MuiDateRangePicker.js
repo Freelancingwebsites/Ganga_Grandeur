@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import * as React from "react";
 import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
 import { LocalizationProvider } from "@mui/x-date-pickers-pro";
@@ -6,16 +7,36 @@ import { AdapterDayjs } from "@mui/x-date-pickers-pro/AdapterDayjs";
 import { DateRangePicker } from "@mui/x-date-pickers-pro/DateRangePicker";
 import Button from "@mui/material/Button";
 import { makeStyles } from "@mui/styles";
+=======
+import * as React from 'react';
+import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
+import { LocalizationProvider } from '@mui/x-date-pickers-pro';
+import CssBaseline from "@mui/material/CssBaseline";
+import { AdapterDayjs } from '@mui/x-date-pickers-pro/AdapterDayjs';
+import { DateRangePicker } from '@mui/x-date-pickers-pro/DateRangePicker';
+import Button from '@mui/material/Button';
+import { makeStyles } from '@mui/styles';
+>>>>>>> f1f000064a8d9236bf0863153bc8eab360ca0122
 import Container from "@mui/material/Container";
 
 const useStyles = makeStyles((theme) => ({
   container: {
+<<<<<<< HEAD
     display: "flex",
     flexDirection: "row",
     marginBottom: "20px",
     marginTop: "10px",
     alignItems: "center",
     paddingBottom: "25px",
+=======
+    display: 'flex',
+    flexDirection: 'row',
+    marginBottom: '20px',
+    marginTop: '10px',
+    alignItems: 'center',
+    paddingBottom: '25px',
+    marginBottom: '20px',
+>>>>>>> f1f000064a8d9236bf0863153bc8eab360ca0122
   },
   calendar: {
     flex: 1,
@@ -50,6 +71,7 @@ export default function BasicDateRangePicker() {
 
   return (
     <React.Fragment>
+<<<<<<< HEAD
       <CssBaseline />
       <Container maxWidth="false" sx={{ marginY: "2" }}>
         <div className={classes.frame}>
@@ -76,5 +98,31 @@ export default function BasicDateRangePicker() {
         </div>
       </Container>
     </React.Fragment>
+=======
+    <CssBaseline />
+    <Container maxWidth="false" sx={{marginY:'2'}}>
+    <div className={classes.frame}>
+      <LocalizationProvider dateAdapter={AdapterDayjs}>
+        <div className={classes.bookingText}>BOOKING</div>
+        <div className={classes.container}>
+          <div className={classes.calendar}>
+            <DemoContainer components={['DateRangePicker']}>
+              <DateRangePicker localeText={{ start: 'Check-in', end: 'Check-out' }} />
+            </DemoContainer>
+          </div>
+          <Button
+            variant="contained"
+            color="primary"
+            onClick={handleSubmit}
+            className={classes.submitButton}
+          >
+            <b>Get Booked</b>
+          </Button>
+        </div>
+      </LocalizationProvider>
+    </div>
+    </Container>
+          </React.Fragment>
+>>>>>>> f1f000064a8d9236bf0863153bc8eab360ca0122
   );
 }

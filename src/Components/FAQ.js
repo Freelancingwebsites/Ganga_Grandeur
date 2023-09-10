@@ -54,6 +54,7 @@ export default function CustomizedAccordions() {
 
   return (
     <React.Fragment>
+<<<<<<< HEAD
       <CssBaseline />
       <Container maxWidth="false" sx={{ marginY: "2" }}>
         <Box
@@ -141,6 +142,74 @@ export default function CustomizedAccordions() {
           </div>
         </Box>
       </Container>
+=======
+    <CssBaseline />
+    <Container maxWidth="false" sx={{marginY:'2'}}>
+    <Box
+      sx={{
+        background: "linear-gradient(135deg, #6479e4, #8dfc46)", // Linear gradient background
+        padding: '20px',
+        minHeight: '85px', // Ensure full height of the viewport
+        marginBottom: '20px',
+        marginTop: '10px',
+        borderRadius: '10px', // Add rounded corners
+        boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.2)', // Add a subtle shadow
+      }}
+    >
+      <div style={{ textAlign: "center" }}>
+        <h6 style={{ fontSize: "24px", fontWeight: "bold", color: "#333", marginBottom: "10px" }}>FAQ</h6>
+        <Accordion
+          expanded={expanded === "panel1"}
+          onChange={handleChange("panel1")}
+        >
+          <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
+            <Typography>Collapsible Group Item #1</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+              malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada
+              lacus ex, sit amet blandit leo lobortis eget.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          expanded={expanded === "panel2"}
+          onChange={handleChange("panel2")}
+        >
+          <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
+            <Typography>Collapsible Group Item #2</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+              malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada
+              lacus ex, sit amet blandit leo lobortis eget.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          expanded={expanded === "panel3"}
+          onChange={handleChange("panel3")}
+        >
+          <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
+            <Typography>Collapsible Group Item #3</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+              malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada
+              lacus ex, sit amet blandit leo lobortis eget.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+      </div>
+    </Box>
+    </Container>
+>>>>>>> f1f000064a8d9236bf0863153bc8eab360ca0122
     </React.Fragment>
   );
 }

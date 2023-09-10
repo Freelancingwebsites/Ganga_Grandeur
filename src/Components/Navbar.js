@@ -15,6 +15,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import {
+<<<<<<< HEAD
   //Facebook,
   //Instagram,
   //Twitter,
@@ -22,6 +23,15 @@ import {
   //Phone,
 } from "@mui/icons-material";
 //import LocalPhoneTwoToneIcon from "@mui/icons-material/LocalPhoneTwoTone";
+=======
+  Facebook,
+  Instagram,
+  Twitter,
+  WhatsApp,
+  Phone,
+} from "@mui/icons-material";
+import LocalPhoneTwoToneIcon from "@mui/icons-material/LocalPhoneTwoTone";
+>>>>>>> f1f000064a8d9236bf0863153bc8eab360ca0122
 import Link from "@mui/material/Link";
 import MarkEmailUnreadTwoToneIcon from "@mui/icons-material/MarkEmailUnreadTwoTone";
 
@@ -60,6 +70,7 @@ function DrawerAppBar(props) {
         ))}
       </List>
       <Link
+<<<<<<< HEAD
         href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER"
         color="inherit"
       >
@@ -71,6 +82,19 @@ function DrawerAppBar(props) {
       >
         <MarkEmailUnreadTwoToneIcon />
       </Link>
+=======
+              href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER"
+              color="inherit"
+            >
+              <WhatsApp />
+            </Link>
+            <Link
+              href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER"
+              color="inherit"
+            >
+              <MarkEmailUnreadTwoToneIcon />
+            </Link>
+>>>>>>> f1f000064a8d9236bf0863153bc8eab360ca0122
     </Box>
   );
 
@@ -79,6 +103,7 @@ function DrawerAppBar(props) {
 
   return (
     <React.Fragment>
+<<<<<<< HEAD
       <CssBaseline />
       <Box sx={{ display: "flex", marginTop: "10px", marginBottom: "20px" }}>
         <AppBar component="nav">
@@ -155,6 +180,84 @@ function DrawerAppBar(props) {
           </Drawer>
         </nav>
       </Box>
+=======
+    <CssBaseline />
+    <Box sx={{ display: "flex", marginTop: '10px', marginBottom: '20px' }}>
+      <AppBar component="nav">
+        <Toolbar>
+          <IconButton
+            color="inherit"
+            aria-label="open drawer"
+            edge="start"
+            onClick={handleDrawerToggle}
+            sx={{ mr: 2, display: { sm: "none" } }}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Typography
+            variant="h6"
+            component="div"
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", sm: "block" },
+              color: "white",
+            }}
+          >
+            <b> GANGA GRANDEUR </b>
+          </Typography>
+
+          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+            {navItems.map((item) => (
+              <Button
+                key={item}
+                sx={{
+                  color: "white",
+                  margin: "0 10px", // Add margin between buttons
+                }}
+              >
+                {item}
+              </Button>
+            ))}
+            <Link
+              href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER"
+              color="inherit"
+            >
+              <WhatsApp />
+            </Link>
+            <Link
+              href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER"
+              color="inherit"
+            >
+              <MarkEmailUnreadTwoToneIcon />
+            </Link>
+          </Box>
+        </Toolbar>
+      </AppBar>
+      <nav>
+        <Drawer
+          container={container}
+          variant="temporary"
+          open={mobileOpen}
+          onClose={handleDrawerToggle}
+          ModalProps={{
+            keepMounted: true,
+          }}
+          sx={{
+            display: { xs: "block", sm: "none" },
+            "& .MuiDrawer-paper": {
+              boxSizing: "border-box",
+              width: drawerWidth,
+              backgroundColor: "#2196F3", // Attractive blue color
+              color: "white",
+              paddingTop: "20px", // Add margin to the top
+            },
+          }}
+        >
+          {drawer}
+        </Drawer>
+      </nav>
+    </Box>
+>>>>>>> f1f000064a8d9236bf0863153bc8eab360ca0122
     </React.Fragment>
   );
 }
