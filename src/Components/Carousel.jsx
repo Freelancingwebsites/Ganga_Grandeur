@@ -10,7 +10,10 @@ function Carousel() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth="false">
+      <Container
+        maxWidth="false"
+        sx={{ marginTop: "70px", marginBottom: "20px" }}
+      >
         <div
           id="carouselExampleCaptions"
           className="carousel slide carousel-fade"
