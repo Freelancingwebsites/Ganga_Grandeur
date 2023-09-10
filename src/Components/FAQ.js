@@ -1,5 +1,6 @@
 import * as React from "react";
 import { styled } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
 import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
 import MuiAccordion from "@mui/material/Accordion";
 import MuiAccordionSummary from "@mui/material/AccordionSummary";
@@ -52,6 +53,8 @@ export default function CustomizedAccordions() {
   };
 
   return (
+    <React.Fragment>
+    <CssBaseline />
     <Container maxWidth="false" sx={{marginY:'2'}}>
     <Box
       sx={{
@@ -117,5 +120,6 @@ export default function CustomizedAccordions() {
       </div>
     </Box>
     </Container>
+    </React.Fragment>
   );
 }
