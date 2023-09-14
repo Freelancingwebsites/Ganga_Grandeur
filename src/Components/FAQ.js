@@ -86,15 +86,11 @@ export default function CustomizedAccordions() {
                 aria-controls="panel1d-content"
                 id="panel1d-header"
               >
-                <Typography>Collapsible Group Item #1</Typography>
+                <Typography>What are the parking facilities at Ganga Grandeur?</Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
+                We have a capacity of 250 Bike Parking, 200 Car Parking & Valet Parking
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -106,15 +102,11 @@ export default function CustomizedAccordions() {
                 aria-controls="panel2d-content"
                 id="panel2d-header"
               >
-                <Typography>Collapsible Group Item #2</Typography>
+                <Typography>What type of food Ganga Grandeur offers? </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
+                We offers a diverse menu that caters to both vegetarians and non-vegetarians
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -126,15 +118,11 @@ export default function CustomizedAccordions() {
                 aria-controls="panel3d-content"
                 id="panel3d-header"
               >
-                <Typography>Collapsible Group Item #3</Typography>
+                <Typography>How many guests can Ganga Grandeur accommodate?</Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
+              We accommodate upto 1,000 guests in seated arrangements and up to 1,500 guests in a floating setup.
                 </Typography>
               </AccordionDetails>
             </Accordion>
