@@ -51,36 +51,36 @@ function Carousel() {
             <div className="carousel-item active ">
               <img src={outlook1} className="d-block w-100 " alt="..." />
               <div className="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
+                <h5>A Hall of Love and Legacy</h5>
                 <p>
-                  Some representative placeholder content for the first slide.
+                Where love and memories intertwine in perfect harmony.
                 </p>
               </div>
             </div>
             <div className="carousel-item ">
               <img src={outlook2} className="d-block w-100 " alt="..." />
               <div className="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
+                <h5>Celebrate Love, Create Memories</h5>
                 <p>
-                  Some representative placeholder content for the second slide.
+                Celebrate your love and let us help you create unforgettable memories.
                 </p>
               </div>
             </div>
             <div className="carousel-item ">
               <img src={inner1} className="d-block w-100 " alt="..." />
               <div className="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
+                <h5>The Ultimate Destination for Happily Ever Afters</h5>
                 <p>
-                  Some representative placeholder content for the third slide.
+                Discover the ultimate destination where cherished memories that last a lifetime.
                 </p>
               </div>
             </div>
             <div className="carousel-item ">
               <img src={inner2} className="d-block w-100 " alt="..." />
               <div className="carousel-caption d-none d-md-block">
-                <h5>Fourth slide label</h5>
+                <h5>A Hall of Love: Where Memories are Made</h5>
                 <p>
-                  Some representative placeholder content for the third slide.
+                A Hall of Love, where every step down the aisle is a memory in the making.
                 </p>
               </div>
             </div>
