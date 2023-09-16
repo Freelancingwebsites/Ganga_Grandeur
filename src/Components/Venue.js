@@ -31,9 +31,8 @@ const CarCard = () => {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth="false" sx={{ marginY: "2" }}>
-        <div style={cardContainerStyle}>
-          Container with the background
+      <Container maxWidth="false" sx={{ marginY: "2" }} id="venue-info">
+        <div style={cardContainerStyle}> {/* Container with the background */}
           <Card>
             <CardContent>
               <Typography
@@ -104,13 +103,13 @@ const CarCard = () => {
                   </div>
                   <div style={sectionStyle}>
                     <Typography variant="body2" color="textSecondary">
-                    <p>
-                      <b>Outside decorators</b>
-                    </p>
-                    <p>
-                      <b>not allowed</b>
-                    </p>
-                  </Typography>
+                      <p>
+                        <b>Outside decorators</b>
+                      </p>
+                      <p>
+                        <b>not allowed</b>
+                      </p>
+                    </Typography>
                   </div>
                 </Grid>
 
@@ -134,13 +133,13 @@ const CarCard = () => {
                   </div>
                   <div style={sectionStyle}>
                     <Typography variant="body2" color="textSecondary">
-                    <p>
-                      <b>• 2 Guest Rooms</b>
-                    </p>
-                    <p>
-                      <b>• 2 AC Rooms</b>
-                    </p>
-                  </Typography>
+                      <p>
+                        <b>• 2 Guest Rooms</b>
+                      </p>
+                      <p>
+                        <b>• 2 AC Rooms</b>
+                      </p>
+                    </Typography>
                   </div>
                 </Grid>
                 <Grid
@@ -163,13 +162,13 @@ const CarCard = () => {
                   </div>
                   <div style={sectionStyle}>
                     <Typography variant="body2" color="textSecondary">
-                    <p>
-                      <b>Outside foods was</b>
-                    </p>
-                    <p>
-                      <b> not allowed</b>
-                    </p>
-                  </Typography>
+                      <p>
+                        <b>Outside foods was</b>
+                      </p>
+                      <p>
+                        <b> not allowed</b>
+                      </p>
+                    </Typography>
                   </div>
                 </Grid>
                 <Grid
@@ -193,13 +192,13 @@ const CarCard = () => {
                   </div>
                   <div style={sectionStyle}>
                     <Typography variant="body2" color="textSecondary">
-                    <p>
-                      <b>• Vegeterian </b>
-                    </p>
-                    <p>
-                      <b>• Non Vegeterian</b>
-                    </p>
-                  </Typography>
+                      <p>
+                        <b>• Vegeterian </b>
+                      </p>
+                      <p>
+                        <b>• Non Vegeterian</b>
+                      </p>
+                    </Typography>
                   </div>
                 </Grid>
                 <Grid
@@ -222,15 +221,15 @@ const CarCard = () => {
                     </Typography>
                   </div>
                   <div style={sectionStyle}>
-                  <Typography variant="body2" color="textSecondary">
-                    <p>
-                      <b>Mahal was fully Air </b>
-                    </p>
-                    <p>
-                      <b>conditioned</b>
-                    </p>
-                  </Typography>
-                </div>
+                    <Typography variant="body2" color="textSecondary">
+                      <p>
+                        <b>Mahal was fully Air </b>
+                      </p>
+                      <p>
+                        <b>conditioned</b>
+                      </p>
+                    </Typography>
+                  </div>
                 </Grid>
               </Grid>
             </CardContent>

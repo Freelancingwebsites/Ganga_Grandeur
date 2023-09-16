@@ -51,7 +51,7 @@ export default function BasicDateRangePicker() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth="false" sx={{ marginY: "2" }}>
+      <Container maxWidth="false" sx={{ marginY: "2" }} id="booking">
         <div className={classes.frame} style={{ padding: "0 20px" }}>
           <LocalizationProvider dateAdapter={AdapterDayjs}>
             <div className={classes.bookingText}>BOOKING</div>
