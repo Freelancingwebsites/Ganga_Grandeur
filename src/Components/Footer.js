@@ -17,6 +17,7 @@ export default function Footer() {
             : theme.palette.grey[400],
         p: 6,
       }}
+      id="footer"
     >
       <Container maxWidth="lg">
         <Grid container spacing={5}>

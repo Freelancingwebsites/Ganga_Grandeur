@@ -20,7 +20,7 @@ export default function ImageGallery() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth="false" sx={{ margin: "4% 0" }}>
+      <Container maxWidth="false" sx={{ margin: "4% 0" }} id="images" >
         <Typography variant="h4" align="center" marginBottom={4}>
           Explore Gallery
         </Typography>

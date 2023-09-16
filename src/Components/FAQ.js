@@ -55,7 +55,7 @@ export default function CustomizedAccordions() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth="false" sx={{ marginY: "2" }}>
+      <Container maxWidth="false" sx={{ marginY: "2" }} id="faq">
         <Box
           sx={{
             background: "linear-gradient(135deg, #6479e4, #8dfc46)", // Linear gradient background

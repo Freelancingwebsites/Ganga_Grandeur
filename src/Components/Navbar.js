@@ -26,7 +26,14 @@ import Link from "@mui/material/Link";
 import MarkEmailUnreadTwoToneIcon from "@mui/icons-material/MarkEmailUnreadTwoTone";
 
 const drawerWidth = 250;
-const navItems = ["Home", "Booking", "Images", "Venue Info", "Faq", "Contact"];
+const navItems = [
+  { navItem: "Home", navLink: "#home" },
+  { navItem: "Booking", navLink: "#booking" },
+  { navItem: "Images", navLink: "#images" },
+  { navItem: "Venue Info", navLink: "#venue-info" },
+  { navItem: "Faq", navLink: "#faq" },
+  { navItem: "Contact", navLink: "#footer" },
+];
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -51,10 +58,13 @@ function DrawerAppBar(props) {
       </Typography>
       <Divider sx={{ backgroundColor: "white" }} />
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center", color: "white" }}>
-              <ListItemText primary={item} />
+        {navItems.map((item, index) => (
+          <ListItem key={index} disablePadding>
+            <ListItemButton
+              sx={{ textAlign: "center", color: "white" }}
+              href={item.navLink}
+            >
+              <ListItemText primary={item.navItem} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -80,7 +90,10 @@ function DrawerAppBar(props) {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Box sx={{ display: "flex", marginTop: "10px", marginBottom: "20px" }}>
+      <Box
+        sx={{ display: "flex", marginTop: "10px", marginBottom: "20px" }}
+        id="home"
+      >
         <AppBar component="nav">
           <Toolbar>
             <IconButton
@@ -105,15 +118,16 @@ function DrawerAppBar(props) {
             </Typography>
 
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
-              {navItems.map((item) => (
+              {navItems.map((item, index) => (
                 <Button
-                  key={item}
+                  key={index}
                   sx={{
                     color: "white",
                     margin: "0 10px", // Add margin between buttons
                   }}
+                  href={item.navLink}
                 >
-                  {item}
+                  {item.navItem}
                 </Button>
               ))}
               <Link
