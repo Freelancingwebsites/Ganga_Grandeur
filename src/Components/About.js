@@ -14,7 +14,7 @@ function App() {
             <b> ABOUT </b>
           </h1>
           <p style={paragraphStyle}>
-            Our Ganga Grandeur in Kanyakumari is an air-conditioned hall with a
+            Our Ganga Grandeur in Nagercoil is an air-conditioned hall with a
             seating capacity of 1000 and a floating capacity of 1500.
           </p>
           <p style={paragraphStyle}>
@@ -24,11 +24,7 @@ function App() {
             The Function Hall is on the Ground floor.
           </p>
           <p style={paragraphStyle}>
-            A parking facility is available for 200 cars and 250 bikes.
-          </p>
-          <p style={paragraphStyle}>
-            The Kalyana Mandapams provides air-conditioned rooms with a locker
-            facility for the guests.
+            A parking facility is available for 350 cars and 250 bikes.
           </p>
           <p style={paragraphStyle}>
             Both the Dining hall and Function hall are on the same floor which
