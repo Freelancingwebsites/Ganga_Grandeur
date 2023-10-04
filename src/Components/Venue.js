@@ -66,10 +66,10 @@ const CarCard = () => {
                   <div style={sectionStyle}>
                     <Typography variant="body2" color="textSecondary">
                       <p>
-                        <b>• 250 Bike parking</b>
+                        <b>• 250 Bike parkings</b>
                       </p>
                       <p>
-                        <b>• 200 Car parking</b>
+                        <b>• 350 Car parkings</b>
                       </p>
                     </Typography>
                     {/* <Typography variant="body2" color="textSecondary">
@@ -157,16 +157,16 @@ const CarCard = () => {
                       variant="h8"
                       style={{ marginTop: "10px", color: "white" }}
                     >
-                      Food
+                      Catering
                     </Typography>
                   </div>
                   <div style={sectionStyle}>
                     <Typography variant="body2" color="textSecondary">
                       <p>
-                        <b>Outside foods was</b>
+                        <b>Outside Catering </b>
                       </p>
                       <p>
-                        <b> not allowed</b>
+                        <b> was allowed</b>
                       </p>
                     </Typography>
                   </div>
