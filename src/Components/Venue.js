@@ -107,7 +107,7 @@ const CarCard = () => {
                         <b>Outside decorators</b>
                       </p>
                       <p>
-                        <b>not allowed</b>
+                        <b>was allowed</b>
                       </p>
                     </Typography>
                   </div>
