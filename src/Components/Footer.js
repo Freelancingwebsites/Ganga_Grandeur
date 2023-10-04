@@ -78,12 +78,12 @@ export default function Footer() {
         </Grid>
         <Box mt={5}>
           <Typography variant="body2" color="text.secondary" align="center">
-            {"Copyright © "}
-            <Link color="inherit" href="https://your-website.com/">
-              Your Website
+            {""}
+            <Link color="inherit" href="">
+             
             </Link>{" "}
             {new Date().getFullYear()}
-            {"."}
+            {""}
           </Typography>
         </Box>
       </Container>
