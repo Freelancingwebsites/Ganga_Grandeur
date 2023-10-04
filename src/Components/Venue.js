@@ -1,243 +1,134 @@
-import React from "react";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
-import CarIcon from "@mui/icons-material/DirectionsCar";
-import Grid from "@mui/material/Grid";
-import HotelIcon from "@mui/icons-material/Hotel";
-import FastfoodIcon from "@mui/icons-material/Fastfood";
+import * as React from "react";
+import { styled } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import StarsIcon from "@mui/icons-material/Stars";
-import LocalDiningIcon from "@mui/icons-material/LocalDining";
-import AcUnitIcon from "@mui/icons-material/AcUnit";
+import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
+import MuiAccordion from "@mui/material/Accordion";
+import MuiAccordionSummary from "@mui/material/AccordionSummary";
+import MuiAccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box"; // Import the Box component
 import Container from "@mui/material/Container";
 
-const CarCard = () => {
-  const cardContainerStyle = {
-    background: "linear-gradient(135deg, #FFB6C1, #87CEEB)", // Gradient background
-    borderRadius: "10px", // Rounded corners for the entire card
-    padding: "20px", // Padding for spacing
-    color: "white", // Text color
-    marginBottom: "20px",
-    marginTop: "10px",
-  };
+const Accordion = styled((props) => (
+  <MuiAccordion disableGutters elevation={1} square {...props} /> // Added elevation
+))(({ theme }) => ({
+  border: `1px solid ${theme.palette.divider}`,
+  "&:not(:last-child)": {
+    borderBottom: 0,
+  },
+  "&:before": {
+    display: "none",
+  },
+}));
 
-  const sectionStyle = {
-    padding: "10px",
-    borderRadius: "5px",
-    backgroundColor: "#F0F0F0", // Light gray background
+const AccordionSummary = styled((props) => (
+  <MuiAccordionSummary
+    expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: "0.9rem" }} />}
+    {...props}
+  />
+))(({ theme }) => ({
+  backgroundColor:
+    theme.palette.mode === "dark"
+      ? "rgba(255, 255, 255, .05)"
+      : "rgba(0, 0, 0, .03)",
+  flexDirection: "row-reverse",
+  "& .MuiAccordionSummary-expandIconWrapper.Mui-expanded": {
+    transform: "rotate(90deg)",
+  },
+  "& .MuiAccordionSummary-content": {
+    marginLeft: theme.spacing(1),
+  },
+}));
+
+const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
+  padding: theme.spacing(2),
+  borderTop: "1px solid rgba(0, 0, 0, .125)",
+}));
+
+export default function CustomizedAccordions() {
+  const [expanded, setExpanded] = React.useState("panel1");
+
+  const handleChange = (panel) => (event, newExpanded) => {
+    setExpanded(newExpanded ? panel : false);
   };
 
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth="false" sx={{ marginY: "2" }} id="venue-info">
-        <div style={cardContainerStyle}> {/* Container with the background */}
-          <Card>
-            <CardContent>
-              <Typography
-                variant="h5"
-                align="center"
-                style={{ fontWeight: "bold" }}
+      <Container maxWidth="false" sx={{ marginY: "2" }} id="faq">
+        <Box
+          sx={{
+            background: "linear-gradient(135deg, #6479e4, #8dfc46)", // Linear gradient background
+            padding: "20px",
+            minHeight: "85px", // Ensure full height of the viewport
+            marginBottom: "20px",
+            marginTop: "10px",
+            borderRadius: "10px", // Add rounded corners
+            boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)", // Add a subtle shadow
+          }}
+        >
+          <div style={{ textAlign: "center" }}>
+            <h6
+              style={{
+                fontSize: "24px",
+                fontWeight: "bold",
+                color: "#333",
+                marginBottom: "10px",
+              }}
+            >
+              FAQ
+            </h6>
+            <Accordion
+              expanded={expanded === "panel1"}
+              onChange={handleChange("panel1")}
+            >
+              <AccordionSummary
+                aria-controls="panel1d-content"
+                id="panel1d-header"
               >
-                Venue Info
-              </Typography>
-            </CardContent>
-            <CardContent>
-              <Grid container alignItems="center" spacing={2}>
-                <Grid
-                  item
-                  xs={6}
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                  }}
-                >
-                  <div style={{ ...sectionStyle, backgroundColor: "#FFB6C1" }}>
-                    <CarIcon style={{ fontSize: 30, color: "white" }} />
-                    <Typography
-                      variant="h8"
-                      style={{ marginTop: "10px", color: "white" }}
-                    >
-                      Parking
-                    </Typography>
-                  </div>
-                  <div style={sectionStyle}>
-                    <Typography variant="body2" color="textSecondary">
-                      <p>
-                        <b>• 250 Bike parkings</b>
-                      </p>
-                      <p>
-                        <b>• 350 Car parkings</b>
-                      </p>
-                    </Typography>
-                    {/* <Typography variant="body2" color="textSecondary">
-                      <Typography variant="p">
-                        <Typography variant="h6">• 250 Bike parking</Typography>
-                        <Typography variant="h6">• 200 Car parking</Typography>
-                      </Typography>
-                    </Typography> */}
-                  </div>
-                </Grid>
-
-                <Grid
-                  item
-                  xs={6}
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                  }}
-                >
-                  <div style={{ ...sectionStyle, backgroundColor: "#87CEEB" }}>
-                    <StarsIcon style={{ fontSize: 30, color: "white" }} />
-                    {/* Replace with StarsIcon */}
-                    <Typography
-                      variant="h8"
-                      style={{ marginTop: "10px", color: "white" }}
-                    >
-                      Decorator
-                    </Typography>
-                    {/* Update text to "Decorator" */}
-                  </div>
-                  <div style={sectionStyle}>
-                    <Typography variant="body2" color="textSecondary">
-                      <p>
-                        <b>Outside decorators</b>
-                      </p>
-                      <p>
-                        <b>was allowed</b>
-                      </p>
-                    </Typography>
-                  </div>
-                </Grid>
-
-                <Grid
-                  item
-                  xs={6}
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                  }}
-                >
-                  <div style={{ ...sectionStyle, backgroundColor: "#98FB98" }}>
-                    <HotelIcon style={{ fontSize: 30, color: "white" }} />
-                    <Typography
-                      variant="h8"
-                      style={{ marginTop: "10px", color: "white" }}
-                    >
-                      Room
-                    </Typography>
-                  </div>
-                  <div style={sectionStyle}>
-                    <Typography variant="body2" color="textSecondary">
-                      <p>
-                        <b>• 2 Guest Rooms</b>
-                      </p>
-                      <p>
-                        <b>• 2 AC Rooms</b>
-                      </p>
-                    </Typography>
-                  </div>
-                </Grid>
-                <Grid
-                  item
-                  xs={6}
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                  }}
-                >
-                  <div style={{ ...sectionStyle, backgroundColor: "#FFD700" }}>
-                    <FastfoodIcon style={{ fontSize: 30, color: "white" }} />
-                    <Typography
-                      variant="h8"
-                      style={{ marginTop: "10px", color: "white" }}
-                    >
-                      Catering
-                    </Typography>
-                  </div>
-                  <div style={sectionStyle}>
-                    <Typography variant="body2" color="textSecondary">
-                      <p>
-                        <b>Outside Catering </b>
-                      </p>
-                      <p>
-                        <b> was allowed</b>
-                      </p>
-                    </Typography>
-                  </div>
-                </Grid>
-                <Grid
-                  item
-                  xs={6}
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                  }}
-                >
-                  <div style={{ ...sectionStyle, backgroundColor: "#FFB6C1" }}>
-                    <LocalDiningIcon style={{ fontSize: 30, color: "white" }} />{" "}
-                    {/* Use LocalDiningIcon for cuisines */}
-                    <Typography
-                      variant="h8"
-                      style={{ marginTop: "10px", color: "white" }}
-                    >
-                      Cuisines
-                    </Typography>
-                  </div>
-                  <div style={sectionStyle}>
-                    <Typography variant="body2" color="textSecondary">
-                      <p>
-                        <b>• Vegeterian </b>
-                      </p>
-                      <p>
-                        <b>• Non Vegeterian</b>
-                      </p>
-                    </Typography>
-                  </div>
-                </Grid>
-                <Grid
-                  item
-                  xs={6}
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                  }}
-                >
-                  <div style={{ ...sectionStyle, backgroundColor: "#87CEEB" }}>
-                    <AcUnitIcon style={{ fontSize: 30, color: "white" }} />
-                    {/* Use the AC icon */}
-                    <Typography
-                      variant="h8"
-                      style={{ marginTop: "10px", color: "white" }}
-                    >
-                      Air Condition
-                    </Typography>
-                  </div>
-                  <div style={sectionStyle}>
-                    <Typography variant="body2" color="textSecondary">
-                      <p>
-                        <b>Mahal was fully Air </b>
-                      </p>
-                      <p>
-                        <b>conditioned</b>
-                      </p>
-                    </Typography>
-                  </div>
-                </Grid>
-              </Grid>
-            </CardContent>
-          </Card>
-        </div>
+                <Typography>What are the parking facilities at Ganga Grandeur?</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                We have a capacity of 250 Bike Parking, 200 Car Parking & Valet Parking
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion
+              expanded={expanded === "panel2"}
+              onChange={handleChange("panel2")}
+            >
+              <AccordionSummary
+                aria-controls="panel2d-content"
+                id="panel2d-header"
+              >
+                <Typography>Whether Outside decorators is allowed? </Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                Yes, Outside decorators is allowed.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion
+              expanded={expanded === "panel3"}
+              onChange={handleChange("panel3")}
+            >
+              <AccordionSummary
+                aria-controls="panel3d-content"
+                id="panel3d-header"
+              >
+                <Typography>How many guests can Ganga Grandeur accommodate?</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+              We accommodate upto 1,000 guests in seated arrangements and up to 1,500 guests in a floating setup.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+          </div>
+        </Box>
       </Container>
     </React.Fragment>
   );
-};
-
-export default CarCard;
+}
